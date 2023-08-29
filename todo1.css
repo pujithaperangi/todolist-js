@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body{
+    height: 100vh;
+    background-image:url("/home/student/Documents/javascript/p/pics/c8b07e380215edaaa1903769586a61dc.jpg");
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+#header{
+    color:white;
+    margin-top:-200px;
+    width:30%;
+    height:40px;
+    border:2px solid white;
+    border-radius:15px;
+    background-color: black;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    font-size:xx-large;
+    font-weight: 100;
+}
+#header:hover{
+    color:black;
+    background-color: white;
+    cursor:pointer;
+}
+
+#add-task-container{
+    margin-top: 20px;
+    width:190%;
+    margin-left:-110px;
+    padding:20px 10px;
+    background:transparent;
+    border-radius:15px;
+   
+    display:flex;
+}
+
+input{
+    flex:5;
+    margin-right:10px;
+    border:2px solid white;
+    border-radius:15px;
+    font-size:1.2rem;
+    padding:5px;
+    box-shadow:0 0 15px black;
+}
+
+input:focus{
+    outline:none;  /*to remove default black highlight */
+    border-color: blue;
+
+}
+
+
+#add-task{
+   
+    transition:.3s;
+    font-size:1.2rem;
+    padding:5px;
+    font-size:1.1rem;
+    background-color: white;
+    border-color:white ;
+    color:rgb(32, 124, 32);
+    border:2px solid;
+    cursor:pointer;
+    border-radius: 10px;
+    width:40px;
+     box-shadow:0 0 15px black;
+}
+#add-task:hover{
+    background:green;
+    color:white;
+}
+
+.task{
+    width:200%;
+    background-color:white;
+    margin-left:-100px;
+    border-radius:10px;
+    box-shadow:0 0 3px;
+    padding:5px;
+    margin-bottom:5px;
+    display:flex;
+    justify-content:space-between;
+
+}
+.task li{
+    list-style:none;
+    flex:4;
+    padding:5px;
+    font-size:1.3rem;
+    margin:10px;
+}
+.task button{
+    flex:1;
+    border-radius:10px;
+    background-color:white;
+    cursor:pointer;
+}
+.task .checkTask{
+    color:orange;
+    margin-right:5px;
+    border:solid 2px orange;
+    font-size:1.5rem;
+}
+.task .checkTask:hover{
+    background-color:orange;
+    color:white;
+}
+.task .deleteTask{
+    color:red;
+    border:solid 2px red;
+    font-size:1.3rem;
+    
+}
+.task .deleteTask:hover{
+    background-color:red;
+    color:white; 
+}
